@@ -31,7 +31,7 @@
                       <small>{{post.date}} </small>
                     </div>
                     <div class="icons">
-                      <button mat-icon-button class="edit"     (click)="openEditDialog(post)"><mat-icon fontIcon="edit"></mat-icon></button>
+                      <button mat-icon-button class="edit"   [disabled]="post.disabled"  (click)="openEditDialog(post)"><mat-icon fontIcon="edit"></mat-icon></button>
                       <button mat-icon-button class="delete" [disabled]="post.disabled"  (click)="deletePost(post)"><mat-icon fontIcon="delete"></mat-icon></button>
                     </div>
                   </div>
