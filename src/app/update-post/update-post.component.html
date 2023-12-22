@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="containerr" *ngIf="spinner==false"> 
+      <h1>Update your post</h1>
+      <mat-form-field appearance="outline">
+        <mat-label>Heading:</mat-label>
+        <input type="text" matInput required [(ngModel)]="inputHeading">
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Content:</mat-label>
+        <textarea cols="20" rows="5" matInput required [(ngModel)]="inputText"></textarea>
+        <mat-hint class="texthint" *ngIf="show==true" >Must be between 10-30 words</mat-hint>
+      </mat-form-field>
+      <div class="buttons">
+        <button mat-raised-button (click)="updatePost(inputHeading, inputText); openSnackBar('all fields must be fulfilled') ">Update post</button>
+        <button mat-raised-button mat-dialog-close="true" mat-dialog-close>Cancel</button>
+      </div>
+    </div>
+  <mat-spinner *ngIf="spinner==true" class="spinner"></mat-spinner>
+</div>
+

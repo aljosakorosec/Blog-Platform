@@ -1,0 +1,98 @@
+/* utility classes */
+.d-flex{ display: flex;}
+.d-marpad{ margin: 0; padding: 0;}
+.d-textalign{text-align: center;}
+.d-alignItems{align-items: center;}
+.d-flex-direction{flex-direction: column;}
+
+/* designing header */
+.container .header .heading{
+    gap: 1rem;
+}  
+.container .header .heading span{
+   font-size: 25px;
+}
+.container .header .toolbar{
+    justify-content: space-between;
+}
+
+/* designing main division*/
+.container .main{
+    margin-top: 3rem;
+}
+.container .main .about{
+    padding-bottom: 25px;
+    background-color: rgba(193, 193, 193, 0.49);
+}
+.container .main .about h2{
+    font-size: 30px;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+.container .main .withimg{
+    padding-left: 5px;
+    gap: 2rem;
+    justify-content: space-around;
+}
+.container .main .withimg img{
+    height: 300px;
+    width: auto;
+    border-radius: 20px;
+    box-shadow: 1px 1px 5px black;
+}
+.container .main .withimg p{
+    width: 40%;
+    font-size: 17px;
+    line-height: 1.35;
+}
+
+/* posts */
+.container .main .posts {
+    padding: 10px;
+    margin-top: 3rem;
+}
+.container .main .posts .paginator{
+    margin-top: 1rem;
+}
+
+.container .main .posts .recepyheading {
+   font-size: 25px;
+}
+.container .main .posts .tile{
+    box-shadow: 1px 1px 5px grey;
+    border-radius: 5px;
+    background-color: azure;
+    
+}
+
+/* single post */
+.container .main .posts .tile .post{
+    align-items: start;
+    padding: 10px;
+    justify-content: flex-start;
+}
+.container .main .posts .tile .post h3{
+    margin-top: 1rem;
+    width: 100%;
+   color: rgb(152, 0, 0);
+   font-size: 20px;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.container .main .posts .tile .post .text{
+    margin-top: 3rem;
+    justify-content: space-between;
+}
+.container .main .posts .tile .post .text p{
+    font-size: 20px;
+    line-height: 1.3;
+}
+.container .main .posts .tile .post .text .bottom{
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-between;
+    padding-left: 5px;
+}
+.container .main .posts .tile .post .text .bottom .author{
+    gap: .7rem;
+}

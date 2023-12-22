@@ -1,0 +1,25 @@
+<div class="container">
+    <div *ngIf="cont==true" class="container">
+      <h1>Enter data about your post</h1>
+    <mat-form-field appearance="outline">
+      <mat-label>Heading:</mat-label>
+      <input type="text" matInput required [(ngModel)]="inputHeading">
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Content:</mat-label>
+      <textarea cols="20" rows="5" matInput required [(ngModel)]="inputText"></textarea>
+      <mat-hint class="texthint" *ngIf="show==true">Must be 10-30 words</mat-hint>
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Author:</mat-label>
+      <input type="text" matInput required [(ngModel)]="author">
+    </mat-form-field>
+    <div class="buttons">
+      <button mat-raised-button (click)="addPost(inputHeading, inputText,author); openSnackBar('all fields must be fulfilled')">Add post</button>
+      <button mat-raised-button mat-dialog-close>Cancel</button>
+    </div>
+  </div>
+  <mat-spinner class="spinner" *ngIf="spinner==true"></mat-spinner>
+</div>
+
+

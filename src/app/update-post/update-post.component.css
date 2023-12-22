@@ -1,0 +1,26 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    position: relative;
+    height: 100%;
+}
+.containerr{
+    display: flex;
+    flex-direction:column ;
+}
+.container .buttons{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    padding-right: 10px;
+}
+.texthint{
+    color: red;
+}
+.container .spinner{
+    position: absolute;
+    top:40%;
+    left: 44.5%;
+}
