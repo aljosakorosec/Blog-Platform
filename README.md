@@ -1,27 +1,26 @@
-# BlogApp
+# Angular Food Blog App
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.9.
+## Project Overview
 
-## Development server
+This Angular application is a small blog platform focused on food, featuring short posts about recipes and cuisine. It utilizes Angular Material components to enhance the user interface and provide a smooth user experience. The data for the blog posts is stored in a JSON file within the project.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Key Features
 
-## Code scaffolding
+- **View Posts**: Users can browse through various food-related posts.
+- **Add/Edit Posts**: Logged-in users can add new posts or edit their existing ones.
+- **Form Validation**: Ensures the quality of the content by validating the number of words in a post.
+- **User Authentication**: Simulated user authentication with a default `userId`, assuming the user is already logged in.
+- **Angular Material Components**: Snackbar, Dialog, Spinner, Paginator, MatFormField, Inputs, etc., for a modern and responsive UI.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Usage
 
-## Build
+- **Viewing Posts**: Browse the homepage to see all the food-related posts.
+- **Adding a Post**: Click on the 'Add Post' button and fill in the form to create a new post.
+- **Editing a Post**: Click on an existing post to edit it. Only posts created by the logged-in user can be edited.
+- **Form Validation**: The form validates the number of words in a post to ensure content quality.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Built With
 
-## Running unit tests
+- [Angular](https://angular.io/) - The web framework used.
+- [Angular Material](https://material.angular.io/) - Material Design components for Angular.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
